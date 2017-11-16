@@ -39,10 +39,12 @@ public void addRectangle(RenderManager rm, point3 p, sdir sd, color c) {
     rm.renderList.add(new segment3(p1, pb, c));
     rm.renderList.add(new segment3(pa, p2, c));
     rm.renderList.add(new segment3(pb, p2, c));
+    /*
     println(p1.x, p1.y, p1.z, pa.x, pa.y, pa.z);
     println(p1.x, p1.y, p1.z, pb.x, pb.y, pb.z);
     println(pa.x, pa.y, pa.z, p2.x, p2.y, p2.z);
     println(pb.x, pb.y, pb.z, p2.x, p2.y, p2.z);
+    */
     /*
     rm.renderList.add(new segment3(p.x, p.y, p.z, p.x+off1[0], p.y+off1[1], p.z+off1[2], c));
     rm.renderList.add(new segment3(p.x, p.y, p.z, p.x+off2[0], p.y+off2[1], p.z+off2[2], c));
