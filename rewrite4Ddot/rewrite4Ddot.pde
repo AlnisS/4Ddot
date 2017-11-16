@@ -1,4 +1,5 @@
 RenderManager rm = new RenderManager();
+//boolean[][][][][] = new boolean[3][3][3][3][6];//x y z w sdir
 void setup() {
   size(700, 700);
   /*
@@ -9,12 +10,12 @@ void setup() {
     rm.renderList.add(new segment3(1, 0, z, 1, 1, z, color(255, 255, 255)));
   }
   */
-  addRectangle(rm, new point3(), sdir.xy, color(255, 255, 255));
-  addRectangle(rm, new point3(), sdir.xz, color(255, 255, 255));
   addRectangle(rm, new point3(), sdir.yz, color(255, 255, 255));
-  addRectangle(rm, new point3(0, 0, 1), sdir.xy, color(255, 255, 255));
-  addRectangle(rm, new point3(0, 1, 0), sdir.xz, color(255, 255, 255));
-  addRectangle(rm, new point3(1, 0, 0), sdir.yz, color(255, 255, 255));
+  //addRectangle(rm, new point3(), sdir.xz, color(255, 255, 255));
+  //addRectangle(rm, new point3(), sdir.yz, color(255, 255, 255));
+  //addRectangle(rm, new point3(0, 0, 1), sdir.xy, color(255, 255, 255));
+  //addRectangle(rm, new point3(0, 1, 0), sdir.xz, color(255, 255, 255));
+  //addRectangle(rm, new point3(1, 0, 0), sdir.yz, color(255, 255, 255));
   //noLoop();
 }
 
